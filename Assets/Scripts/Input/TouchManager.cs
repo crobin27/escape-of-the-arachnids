@@ -18,10 +18,6 @@ public class TouchManager : MonoBehaviour
     private int joystick_id = -1;
 
     public RectTransform joystickRect;
-    private void Start()
-    {
-        Debug.Log("js rect world space:" + joystickRect.position);
-    }
     private void Update()
     {
         if (Input.touchCount > 0)
@@ -58,11 +54,11 @@ public class TouchManager : MonoBehaviour
                     if (touch.fingerId == joystick_id)
                     {
                         joystick_id = -1;
-                        Debug.Log("joystick touch ended");
+                        
                     }
                     else
                     {
-                        Debug.Log("Tap ended");
+                        
                         isTapping = false;
                     }
                 }

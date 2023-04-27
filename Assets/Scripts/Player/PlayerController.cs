@@ -2,12 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : MonoBehaviour, IDamageable
 {
     [SerializeField] private int m_health = 5;
     [SerializeField] private float m_speed = 25f;
     [SerializeField] private float m_attackRange = 2.0f;
     [SerializeField] private int m_attackDamage = 10;
+
 
     private Animator m_animator;
 
@@ -32,6 +33,9 @@ public class PlayerController : MonoBehaviour
         if (joystick.Horizontal == 0 && joystick.Vertical == 0)
         {
             m_rb.velocity = Vector2.zero;
+      
+            m_animator.SetFloat("LastX", horizontal);
+            m_animator.SetFloat("LastY", vertical);
         }
         else
         {
@@ -47,10 +51,28 @@ public class PlayerController : MonoBehaviour
             Vector2 direction = new Vector2(horizontal, vertical).normalized;
              // Debug.Log("joystick vector" + direction);
             m_rb.velocity = direction * m_speed * Time.deltaTime;
+            
         }
-        
+
+        m_animator.SetFloat("Speed", m_rb.velocity.magnitude);
+
     }
 
+    public void Die()
+    {
+        Destroy(gameObject);
+    }
+    public void TakeDamage(int damage)
+    {
+        m_health -= damage;
+        if (m_health < 0)
+        {
+            // Load End Scene
+            Die();
+        }
+    }
+
+    
 
 
 }
