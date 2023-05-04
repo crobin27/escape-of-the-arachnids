@@ -7,20 +7,21 @@ public class UIManager : MonoBehaviour
 {
     public static UIManager Instance { get; private set; }
 
+
     [SerializeField]private GameObject startPanel;
     [SerializeField]private GameObject pausePanel;
     [SerializeField]private GameObject optionsPanel;
     [SerializeField]private GameObject endGamePanel;
     [SerializeField]private GameObject winGamePanel;
 
-    private bool wasPlaying;    // used to know where the user pressed the options button
+    public bool isPlaying;    // used to know where the user pressed the options button
 
     private void Awake()
     {
-        
         if (Instance == null)
         {
             Instance = this;
+            
             DontDestroyOnLoad(gameObject);
         }
         else
@@ -29,14 +30,18 @@ public class UIManager : MonoBehaviour
         }
     }
 
+
     private void Start()
     {
-        StartGame();
+        if (!isPlaying)
+        {
+            StartGame();
+        }
     }
 
     private void StartGame()
     {
-        wasPlaying = false;
+        Time.timeScale = 0;
         ShowStartPanel();
     }
 
@@ -62,7 +67,7 @@ public class UIManager : MonoBehaviour
     public void HideOptionsPanel()
     {
         optionsPanel.SetActive(false);
-        if(wasPlaying)
+        if(isPlaying)
         {
             ShowPausePanel();
         }
@@ -97,6 +102,5 @@ public class UIManager : MonoBehaviour
         optionsPanel.SetActive(false);
         endGamePanel.SetActive(false);
         winGamePanel.SetActive(false);
-        wasPlaying = true;
     }
 }

@@ -33,7 +33,7 @@ public class TouchManager : MonoBehaviour
                         continue;
                     }
 
-                    Debug.Log("not in rect");
+                    //Debug.Log("not in rect");
                     // touch input begins
                     isTapping = true;
                     tapLocation = Camera.main.ScreenToWorldPoint(touch.position);

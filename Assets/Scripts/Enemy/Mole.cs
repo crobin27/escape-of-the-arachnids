@@ -18,16 +18,16 @@ public class Mole : Enemy, IDamageable
     private IEnumerator Charge()
     {
         isCharging = true;
-        float originalSpeed = agent.speed;
+        float originalSpeed = m_agent.speed;
 
         // Set the charging speed
-        agent.speed = chargeSpeed;
+        m_agent.speed = chargeSpeed;
 
         // Charge for the specified duration
         yield return new WaitForSeconds(chargeDuration);
 
         // Reset the speed and charge timer
-        agent.speed = originalSpeed;
+        m_agent.speed = originalSpeed;
         chargeTimer = 0f;
         isCharging = false;
     }

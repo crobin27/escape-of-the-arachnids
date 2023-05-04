@@ -1,9 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour, IDamageable
 {
+    public static PlayerController Instance { get; private set; }
+
     [SerializeField] private int m_health = 5;
     [SerializeField] private float m_speed = 25f;
     [SerializeField] private float m_attackRange = 2.0f;
@@ -22,8 +25,17 @@ public class PlayerController : MonoBehaviour, IDamageable
     float moveLimiter = 0.7f;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+
         m_rb = GetComponent<Rigidbody2D>();
         m_animator = GetComponent<Animator>();
     }
@@ -61,6 +73,9 @@ public class PlayerController : MonoBehaviour, IDamageable
     public void Die()
     {
         Destroy(gameObject);
+
+        UIManager.Instance.ShowEndGamePanel();
+        SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene());
     }
     public void TakeDamage(int damage)
     {

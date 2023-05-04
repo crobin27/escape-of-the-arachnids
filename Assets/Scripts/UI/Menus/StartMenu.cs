@@ -6,18 +6,32 @@ using UnityEngine.SceneManagement;
 
 public class StartMenu : MonoBehaviour
 {
+    [SerializeField] private GameObject optionsPanel;
+    [SerializeField] private GameObject startPanel;
+
+    private void Start()
+    {
+        StartGame();
+    }
+
+    private void StartGame()
+    {
+        startPanel.SetActive(true);
+    }
     public void PlayGame()
     {
-        SceneManager.LoadScene("1");
-        if (UIManager.Instance == null)
-        {
-            SceneManager.LoadScene("UIScene", LoadSceneMode.Additive);
-            UIManager.Instance.DeactivateAllPanels();
-        }
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);        
     }
 
     public void OpenOptions()
     {
-        UIManager.Instance.ShowOptionsPanel();
+        startPanel.SetActive(false);
+        optionsPanel.SetActive(true);
+    }
+
+    public void StartOptionsBack()
+    {
+        optionsPanel.SetActive(false);
+        startPanel.SetActive(true);
     }
 }
