@@ -210,6 +210,50 @@ SpriteAtlas:
   - {fileID: 21300112, guid: 1c9ed9d1200c29d4cbfd2071028c1cd5, type: 3}
   - {fileID: 21300046, guid: 1c9ed9d1200c29d4cbfd2071028c1cd5, type: 3}
   - {fileID: 21300000, guid: 39863dd113769499488ded9f37cd3ef4, type: 3}
+  - {fileID: 17388848, guid: 10b501f10456aba4e91bd53eae523c7e, type: 3}
+  - {fileID: -1438633130, guid: 10b501f10456aba4e91bd53eae523c7e, type: 3}
+  - {fileID: -964278392, guid: 10b501f10456aba4e91bd53eae523c7e, type: 3}
+  - {fileID: 582161910, guid: 10b501f10456aba4e91bd53eae523c7e, type: 3}
+  - {fileID: 1347431920, guid: 10b501f10456aba4e91bd53eae523c7e, type: 3}
+  - {fileID: -544524661, guid: 10b501f10456aba4e91bd53eae523c7e, type: 3}
+  - {fileID: 587854720, guid: 10b501f10456aba4e91bd53eae523c7e, type: 3}
+  - {fileID: 2110370080, guid: 10b501f10456aba4e91bd53eae523c7e, type: 3}
+  - {fileID: -724549605, guid: 10b501f10456aba4e91bd53eae523c7e, type: 3}
+  - {fileID: -2032806395, guid: 10b501f10456aba4e91bd53eae523c7e, type: 3}
+  - {fileID: 660641627, guid: 10b501f10456aba4e91bd53eae523c7e, type: 3}
+  - {fileID: 1904459789, guid: 10b501f10456aba4e91bd53eae523c7e, type: 3}
+  - {fileID: 1886669057, guid: 10b501f10456aba4e91bd53eae523c7e, type: 3}
+  - {fileID: -474296052, guid: 10b501f10456aba4e91bd53eae523c7e, type: 3}
+  - {fileID: 714970270, guid: 10b501f10456aba4e91bd53eae523c7e, type: 3}
+  - {fileID: -41276735, guid: 10b501f10456aba4e91bd53eae523c7e, type: 3}
+  - {fileID: 1250571590, guid: 10b501f10456aba4e91bd53eae523c7e, type: 3}
+  - {fileID: 1896182523, guid: 10b501f10456aba4e91bd53eae523c7e, type: 3}
+  - {fileID: 614468659, guid: 10b501f10456aba4e91bd53eae523c7e, type: 3}
+  - {fileID: 783958539, guid: 10b501f10456aba4e91bd53eae523c7e, type: 3}
+  - {fileID: 1599640668, guid: 10b501f10456aba4e91bd53eae523c7e, type: 3}
+  - {fileID: -2098432210, guid: 10b501f10456aba4e91bd53eae523c7e, type: 3}
+  - {fileID: 567400072, guid: 10b501f10456aba4e91bd53eae523c7e, type: 3}
+  - {fileID: -795686475, guid: 10b501f10456aba4e91bd53eae523c7e, type: 3}
+  - {fileID: 795243656, guid: 10b501f10456aba4e91bd53eae523c7e, type: 3}
+  - {fileID: -833369650, guid: 10b501f10456aba4e91bd53eae523c7e, type: 3}
+  - {fileID: 264250242, guid: 10b501f10456aba4e91bd53eae523c7e, type: 3}
+  - {fileID: 343749495, guid: 10b501f10456aba4e91bd53eae523c7e, type: 3}
+  - {fileID: -1914271949, guid: 10b501f10456aba4e91bd53eae523c7e, type: 3}
+  - {fileID: -1983241661, guid: 10b501f10456aba4e91bd53eae523c7e, type: 3}
+  - {fileID: 1866195969, guid: 10b501f10456aba4e91bd53eae523c7e, type: 3}
+  - {fileID: -1281392137, guid: 10b501f10456aba4e91bd53eae523c7e, type: 3}
+  - {fileID: -1038976428, guid: 10b501f10456aba4e91bd53eae523c7e, type: 3}
+  - {fileID: -422700160, guid: 10b501f10456aba4e91bd53eae523c7e, type: 3}
+  - {fileID: -671121716, guid: 10b501f10456aba4e91bd53eae523c7e, type: 3}
+  - {fileID: 1194105371, guid: 10b501f10456aba4e91bd53eae523c7e, type: 3}
+  - {fileID: -688754074, guid: 10b501f10456aba4e91bd53eae523c7e, type: 3}
+  - {fileID: 1850627661, guid: 10b501f10456aba4e91bd53eae523c7e, type: 3}
+  - {fileID: -2076274960, guid: 10b501f10456aba4e91bd53eae523c7e, type: 3}
+  - {fileID: -127453163, guid: 10b501f10456aba4e91bd53eae523c7e, type: 3}
+  - {fileID: 347145151, guid: 10b501f10456aba4e91bd53eae523c7e, type: 3}
+  - {fileID: 1623077985, guid: 10b501f10456aba4e91bd53eae523c7e, type: 3}
+  - {fileID: -1418280394, guid: 10b501f10456aba4e91bd53eae523c7e, type: 3}
+  - {fileID: 1753437639, guid: 10b501f10456aba4e91bd53eae523c7e, type: 3}
   - {fileID: 21300000, guid: c5ab53f1aba4f405b838d610445575ff, type: 3}
   - {fileID: 21300000, guid: 8ccc4522cd40ce143b8734b217097885, type: 3}
   - {fileID: 21300000, guid: 2521b6229a37c4a56b4fd4e12227c2fb, type: 3}
@@ -2390,6 +2434,50 @@ SpriteAtlas:
   - TX Tileset Grass Pavement 6
   - TX Tileset Grass Flower 11
   - enemy-death-3
+  - spider05_18
+  - spider05_13
+  - spider05_12
+  - spider05_28
+  - spider05_11
+  - spider05_29
+  - spider05_10
+  - spider05_26
+  - spider05_17
+  - spider05_27
+  - spider05_16
+  - spider05_24
+  - spider05_15
+  - spider05_25
+  - spider05_14
+  - spider05_22
+  - spider05_23
+  - spider05_20
+  - spider05_21
+  - spider05_31
+  - spider05_30
+  - spider05_33
+  - spider05_32
+  - spider05_35
+  - spider05_34
+  - spider05_37
+  - spider05_36
+  - spider05_40
+  - spider05_39
+  - spider05_41
+  - spider05_38
+  - spider05_42
+  - spider05_43
+  - spider05_8
+  - spider05_9
+  - spider05_0
+  - spider05_1
+  - spider05_2
+  - spider05_3
+  - spider05_4
+  - spider05_5
+  - spider05_6
+  - spider05_7
+  - spider05_19
   - mole-idle-back
   - white-web
   - hero-walk-side-1
