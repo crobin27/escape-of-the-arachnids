@@ -2,12 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.EventSystems;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TouchManager : MonoBehaviour
 {
     public Transform debugCircle;
     // variable to hold the tap location
     private Vector2 tapLocation;
+    public Canvas cameraCanvas;
     public Vector2 TapLocation { get { return tapLocation; } }
 
 
@@ -27,7 +29,7 @@ public class TouchManager : MonoBehaviour
                 if (touch.phase == TouchPhase.Began)
                 {
                     // check if touch in rect and js not active
-                    if (RectTransformUtility.RectangleContainsScreenPoint(joystickRect, touch.position) && joystick_id == -1)
+                    if (RectTransformUtility.RectangleContainsScreenPoint(joystickRect, touch.position, cameraCanvas.worldCamera) && joystick_id == -1)
                     { 
                         joystick_id = touch.fingerId;
                         continue;

@@ -8,10 +8,22 @@ public class PlayerController : MonoBehaviour, IDamageable
     public static PlayerController Instance { get; private set; }
 
     [SerializeField] private int m_health = 5;
-    [SerializeField] private float m_speed = 25f;
+    [SerializeField] private float m_speed = 10f;
+    [SerializeField] private float m_normalSpeed = 10f;
+
     [SerializeField] private float m_attackRange = 2.0f;
     [SerializeField] private int m_attackDamage = 10;
 
+    public float Speed
+    {
+        get{ return m_speed; }
+        set { m_speed = value; }
+    }
+    public float NormalSpeed
+    {
+        get { return m_normalSpeed; }
+        set { m_normalSpeed = value; }
+    }
 
     private Animator m_animator;
 
@@ -73,9 +85,7 @@ public class PlayerController : MonoBehaviour, IDamageable
     public void Die()
     {
         Destroy(gameObject);
-
-        UIManager.Instance.ShowEndGamePanel();
-        SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene());
+        SceneManager.LoadScene("DeathScene");
     }
     public void TakeDamage(int damage)
     {

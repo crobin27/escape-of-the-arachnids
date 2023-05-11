@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 3679148482442296607}
   m_Layer: 0
   m_Name: FastSpider-01
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -191,7 +191,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_health: 1
+  m_maxHealth: 0
   m_movementSpeed: 5
+  m_normalSpeed: 0
   m_damage: 1
   m_updatePathInterval: 1
   m_agent: {fileID: 3679148482442296598}

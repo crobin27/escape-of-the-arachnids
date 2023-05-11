@@ -5,7 +5,9 @@ using UnityEngine.AI;
 public class Enemy : MonoBehaviour, IDamageable
 {
     [SerializeField] protected int m_health;
+    [SerializeField] protected int m_maxHealth;
     [SerializeField] protected float m_movementSpeed;
+    [SerializeField] protected float m_normalSpeed;
     [SerializeField] protected int m_damage;
     [SerializeField] private float m_updatePathInterval = 1f; // Time interval to update the path
 
@@ -13,7 +15,16 @@ public class Enemy : MonoBehaviour, IDamageable
     [SerializeField] protected Transform player;
     private float elapsedTime;
 
-
+    public float Speed
+    {
+        get { return m_movementSpeed; }
+        set { m_movementSpeed = value; }
+    }
+    public float NormalSpeed
+    {
+        get { return m_normalSpeed; }
+        set { m_normalSpeed = value; }
+    }
     protected virtual void Start()
     {
         m_agent = GetComponent<NavMeshAgent>();
