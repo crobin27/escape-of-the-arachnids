@@ -61,6 +61,50 @@ SpriteAtlas:
   - {fileID: -68803787505221607, guid: 162473a0430db7841a72bcd3c2c1ca47, type: 3}
   - {fileID: 2366441547712947784, guid: 162473a0430db7841a72bcd3c2c1ca47, type: 3}
   - {fileID: 21300000, guid: 54e307e02e8174335a835d5efe3c8380, type: 3}
+  - {fileID: 738618274, guid: 999a54213332aba4da0957cf1aa647e9, type: 3}
+  - {fileID: -15838863, guid: 999a54213332aba4da0957cf1aa647e9, type: 3}
+  - {fileID: -1534770639, guid: 999a54213332aba4da0957cf1aa647e9, type: 3}
+  - {fileID: 1734855899, guid: 999a54213332aba4da0957cf1aa647e9, type: 3}
+  - {fileID: 71323146, guid: 999a54213332aba4da0957cf1aa647e9, type: 3}
+  - {fileID: 1995083183, guid: 999a54213332aba4da0957cf1aa647e9, type: 3}
+  - {fileID: -1159756189, guid: 999a54213332aba4da0957cf1aa647e9, type: 3}
+  - {fileID: 2146840538, guid: 999a54213332aba4da0957cf1aa647e9, type: 3}
+  - {fileID: 1134783559, guid: 999a54213332aba4da0957cf1aa647e9, type: 3}
+  - {fileID: -1399985038, guid: 999a54213332aba4da0957cf1aa647e9, type: 3}
+  - {fileID: -477062630, guid: 999a54213332aba4da0957cf1aa647e9, type: 3}
+  - {fileID: -1784958902, guid: 999a54213332aba4da0957cf1aa647e9, type: 3}
+  - {fileID: 1752663895, guid: 999a54213332aba4da0957cf1aa647e9, type: 3}
+  - {fileID: -1348888321, guid: 999a54213332aba4da0957cf1aa647e9, type: 3}
+  - {fileID: -1744516237, guid: 999a54213332aba4da0957cf1aa647e9, type: 3}
+  - {fileID: 2070459506, guid: 999a54213332aba4da0957cf1aa647e9, type: 3}
+  - {fileID: -671457420, guid: 999a54213332aba4da0957cf1aa647e9, type: 3}
+  - {fileID: -1961051260, guid: 999a54213332aba4da0957cf1aa647e9, type: 3}
+  - {fileID: 157371202, guid: 999a54213332aba4da0957cf1aa647e9, type: 3}
+  - {fileID: 716907036, guid: 999a54213332aba4da0957cf1aa647e9, type: 3}
+  - {fileID: 355871911, guid: 999a54213332aba4da0957cf1aa647e9, type: 3}
+  - {fileID: 986042311, guid: 999a54213332aba4da0957cf1aa647e9, type: 3}
+  - {fileID: -664280401, guid: 999a54213332aba4da0957cf1aa647e9, type: 3}
+  - {fileID: -1844812666, guid: 999a54213332aba4da0957cf1aa647e9, type: 3}
+  - {fileID: -493319294, guid: 999a54213332aba4da0957cf1aa647e9, type: 3}
+  - {fileID: -20029111, guid: 999a54213332aba4da0957cf1aa647e9, type: 3}
+  - {fileID: -2127035658, guid: 999a54213332aba4da0957cf1aa647e9, type: 3}
+  - {fileID: 2044954398, guid: 999a54213332aba4da0957cf1aa647e9, type: 3}
+  - {fileID: 1911197802, guid: 999a54213332aba4da0957cf1aa647e9, type: 3}
+  - {fileID: 641019354, guid: 999a54213332aba4da0957cf1aa647e9, type: 3}
+  - {fileID: 1013723590, guid: 999a54213332aba4da0957cf1aa647e9, type: 3}
+  - {fileID: 471893361, guid: 999a54213332aba4da0957cf1aa647e9, type: 3}
+  - {fileID: -1432315046, guid: 999a54213332aba4da0957cf1aa647e9, type: 3}
+  - {fileID: 344976743, guid: 999a54213332aba4da0957cf1aa647e9, type: 3}
+  - {fileID: 909180157, guid: 999a54213332aba4da0957cf1aa647e9, type: 3}
+  - {fileID: 719141692, guid: 999a54213332aba4da0957cf1aa647e9, type: 3}
+  - {fileID: 363850307, guid: 999a54213332aba4da0957cf1aa647e9, type: 3}
+  - {fileID: -1636246467, guid: 999a54213332aba4da0957cf1aa647e9, type: 3}
+  - {fileID: -336770628, guid: 999a54213332aba4da0957cf1aa647e9, type: 3}
+  - {fileID: -1608849585, guid: 999a54213332aba4da0957cf1aa647e9, type: 3}
+  - {fileID: 271375701, guid: 999a54213332aba4da0957cf1aa647e9, type: 3}
+  - {fileID: 1622457473, guid: 999a54213332aba4da0957cf1aa647e9, type: 3}
+  - {fileID: 447800416, guid: 999a54213332aba4da0957cf1aa647e9, type: 3}
+  - {fileID: 1955899889, guid: 999a54213332aba4da0957cf1aa647e9, type: 3}
   - {fileID: 21300000, guid: 5bfad33111cd74875afe141dc1db8c66, type: 3}
   - {fileID: -6224283800805417084, guid: 3ddde431ca5c9d14db6efc1ec3bdf431, type: 3}
   - {fileID: -8868092757516852463, guid: 3ddde431ca5c9d14db6efc1ec3bdf431, type: 3}
@@ -1385,6 +1429,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: eef3b797d962d47419f4db6cf5144059, type: 3}
   - {fileID: 21300000, guid: 37a2d4b7807fb4089a452e9a68acc935, type: 3}
   - {fileID: 21300000, guid: dbc624f7b3a644dcf989e434e63d9a98, type: 3}
+  - {fileID: 21300000, guid: 03fc382838c888644931f7bfcf02f46c, type: 3}
   - {fileID: 21300000, guid: af44b838e74a6481b8e4c615bdbdd0af, type: 3}
   - {fileID: 21300000, guid: becb8a6873c144b738fc9cc5fceece35, type: 3}
   - {fileID: 21300000, guid: af1d44c8d77c341869dcdb0b63c5cff8, type: 3}
@@ -1516,6 +1561,7 @@ SpriteAtlas:
   - {fileID: 9204885208467931362, guid: ef4afce9909ccff41949808d0c0d5619, type: 3}
   - {fileID: 6710671178169355799, guid: ef4afce9909ccff41949808d0c0d5619, type: 3}
   - {fileID: 5756675161754493124, guid: ef4afce9909ccff41949808d0c0d5619, type: 3}
+  - {fileID: 21300000, guid: 181a22f9ece46484b83c1b021c85fb06, type: 3}
   - {fileID: 21300000, guid: 1e624e1a997d8411ebe498d51d9dcc6d, type: 3}
   - {fileID: 21300000, guid: fa9008ba27d044823835d85918621932, type: 3}
   - {fileID: 21300000, guid: aa94c6da14ecf4a8690f02549a9ac6a7, type: 3}
@@ -2195,6 +2241,50 @@ SpriteAtlas:
   - ExtraGrass_0
   - ExtraGrass_1
   - hero-walk-front-6
+  - spider09_19
+  - spider09_18
+  - spider09_17
+  - spider09_16
+  - spider09_15
+  - spider09_14
+  - spider09_13
+  - spider09_12
+  - spider09_11
+  - spider09_10
+  - spider09_40
+  - spider09_41
+  - spider09_42
+  - spider09_22
+  - spider09_43
+  - spider09_23
+  - spider09_20
+  - spider09_21
+  - spider09_35
+  - spider09_26
+  - spider09_34
+  - spider09_27
+  - spider09_37
+  - spider09_24
+  - spider09_36
+  - spider09_25
+  - spider09_31
+  - spider09_30
+  - spider09_33
+  - spider09_28
+  - spider09_32
+  - spider09_29
+  - spider09_39
+  - spider09_38
+  - spider09_4
+  - spider09_5
+  - spider09_6
+  - spider09_7
+  - spider09_0
+  - spider09_1
+  - spider09_2
+  - spider09_3
+  - spider09_8
+  - spider09_9
   - gem-3
   - WaterfallGround2a
   - WaterfallGround2b
@@ -3519,6 +3609,7 @@ SpriteAtlas:
   - hero-attack-front-2
   - enemy-death-4
   - bush
+  - emptyHeart
   - hero-attack-back-2
   - hero-walk-side-2
   - hearts-2
@@ -3650,6 +3741,7 @@ SpriteAtlas:
   - RiverClockwise5a
   - RiverCounterClockwise1a
   - RiverClockwise5b
+  - heart
   - hero-walk-front-3
   - tileset
   - bush-tall

@@ -13,7 +13,11 @@ public class PlayerController : MonoBehaviour, IDamageable
 
     [SerializeField] private float m_attackRange = 2.0f;
     [SerializeField] private int m_attackDamage = 10;
-
+    
+    public int Health
+    {
+        get { return m_health; }
+    }
     public float Speed
     {
         get{ return m_speed; }
@@ -90,6 +94,7 @@ public class PlayerController : MonoBehaviour, IDamageable
     public void TakeDamage(int damage)
     {
         m_health -= damage;
+        HealthBar.Instance.UpdateHealth(m_health);
         if (m_health < 0)
         {
             // Load End Scene

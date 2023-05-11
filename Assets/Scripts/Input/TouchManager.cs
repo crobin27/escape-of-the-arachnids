@@ -30,7 +30,8 @@ public class TouchManager : MonoBehaviour
                 {
                     // check if touch in rect and js not active
                     if (RectTransformUtility.RectangleContainsScreenPoint(joystickRect, touch.position, cameraCanvas.worldCamera) && joystick_id == -1)
-                    { 
+                    {
+                        Debug.Log("JS touched");
                         joystick_id = touch.fingerId;
                         continue;
                     }
@@ -60,7 +61,6 @@ public class TouchManager : MonoBehaviour
                     }
                     else
                     {
-                        
                         isTapping = false;
                     }
                 }
