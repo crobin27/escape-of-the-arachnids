@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class WebBullet : MonoBehaviour
 {
-    [SerializeField] private int m_bulletDamage = 1;
-    [SerializeField] private float characterSlowdown = 0.8f;
-    [SerializeField] private float enemySpeedup = 2f;
+    [SerializeField] private int m_bulletDamage;
+    [SerializeField] private float characterSlowdown;
+    [SerializeField] private float enemySpeedup;
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
