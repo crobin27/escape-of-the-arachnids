@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3679148482442296595}
   - component: {fileID: 3679148482442296592}
   - component: {fileID: 3679148482442296598}
-  - component: {fileID: 3679148482442296607}
+  - component: {fileID: 2319301865524937212}
   m_Layer: 0
   m_Name: ShootingSpider-05
   m_TagString: Enemy
@@ -179,7 +179,7 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &3679148482442296607
+--- !u!114 &2319301865524937212
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -188,17 +188,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 3679148482442296599}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a5af7229eaddb1d4ea3b76a8d4714b6e, type: 3}
+  m_Script: {fileID: 11500000, guid: 7306b7fa47f883540a718fecfd0c5bc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_health: 1
-  m_maxHealth: 0
-  m_movementSpeed: 5
-  m_normalSpeed: 0
+  m_health: 3
+  m_maxHealth: 3
+  m_movementSpeed: 3
+  m_normalSpeed: 3
   m_damage: 1
   m_updatePathInterval: 1
   m_agent: {fileID: 3679148482442296598}
   player: {fileID: 0}
+  m_shootDelay: 1.5
+  bulletPrefab: {fileID: 4302858828322245319, guid: 1e259d823e818ff4abafb9f0f8c333a9,
+    type: 3}
+  m_bulletForce: 5
+  m_firePointPadding: 3
 --- !u!1 &7933543771243361292
 GameObject:
   m_ObjectHideFlags: 0

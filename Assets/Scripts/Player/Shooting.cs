@@ -31,13 +31,22 @@ public class Shooting : MonoBehaviour
         Vector3 spawnPosition = transform.position + (Vector3)direction * spawnDistance;
         spawnPosition.z = 0;
 
+        // Calculate rotation to face the bullet towards direction of shot
+        Quaternion bulletRotation = Quaternion.LookRotation(Vector3.forward, direction);
+
+        // Adjust the rotation by 90 degrees if the sprite's "front" is facing right
+        bulletRotation *= Quaternion.Euler(0, 0, 90);
+
         // Instantiate the bullet
-        GameObject bullet = Instantiate(bulletPrefab, spawnPosition, Quaternion.identity);
+        GameObject bullet = Instantiate(bulletPrefab, spawnPosition, bulletRotation);
         bullet.transform.SetParent(transform);
         Rigidbody2D bulletRigidbody = bullet.GetComponent<Rigidbody2D>();
 
         // Set the bullet's velocity
         bulletRigidbody.velocity = direction * bulletSpeed;
+        GetComponent<Animator>().SetFloat("ShootX", direction.x);
+        GetComponent<Animator>().SetFloat("ShootY", direction.y);
+        GetComponent<Animator>().SetTrigger("Shoot");
 
         // Wait for the shooting delay
         yield return new WaitForSeconds(shootingDelay);
