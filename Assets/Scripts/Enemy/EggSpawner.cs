@@ -8,10 +8,15 @@ public class EggSpawner : MonoBehaviour, IDamageable
     public int numSpidersPerSpawn;
     public float spawnCooldown;
     private bool isSpawning = false;
+    [SerializeField] private int m_health;
 
     public void TakeDamage(int damage)
     {
-        Die();
+        m_health -= damage;
+        if(m_health <= 0)
+        {
+            Die();
+        }
     }
 
     public void Die()
