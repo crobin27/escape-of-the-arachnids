@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44402185, g: 0.49316472, b: 0.57223153, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3269,6 +3269,7 @@ GameObject:
   m_Component:
   - component: {fileID: 48796375}
   - component: {fileID: 48796374}
+  - component: {fileID: 48796376}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -3353,6 +3354,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!114 &48796376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 48796373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 1
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
 --- !u!1 &384375483
 GameObject:
   m_ObjectHideFlags: 0
@@ -56122,7 +56143,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &481586065
 RectTransform:
   m_ObjectHideFlags: 0
@@ -56158,7 +56179,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -72046,7 +72067,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 5.377304, y: 0}
   m_SizeDelta: {x: 20.75458, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -73764,7 +73785,7 @@ PrefabInstance:
     - target: {fileID: 6004462642869595838, guid: 1f6ebaa429ea13142ab995a88d02eff7,
         type: 3}
       propertyPath: m_bulletForce
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6004462642869595838, guid: 1f6ebaa429ea13142ab995a88d02eff7,
         type: 3}
@@ -76944,6 +76965,7 @@ MonoBehaviour:
     type: 3}
   fullHeart: {fileID: 21300000, guid: 181a22f9ece46484b83c1b021c85fb06, type: 3}
   emptyHeart: {fileID: 21300000, guid: 03fc382838c888644931f7bfcf02f46c, type: 3}
+  m_regenerationTime: 5
   xPadding: 1.55
 --- !u!222 &8889046526124555210
 CanvasRenderer:

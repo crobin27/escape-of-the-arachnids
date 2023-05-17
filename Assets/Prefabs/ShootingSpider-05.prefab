@@ -191,10 +191,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7306b7fa47f883540a718fecfd0c5bc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_health: 3
-  m_maxHealth: 3
-  m_movementSpeed: 3
-  m_normalSpeed: 3
+  m_health: 2
+  m_maxHealth: 2
+  m_movementSpeed: 2
+  m_normalSpeed: 2
   m_damage: 1
   m_updatePathInterval: 1
   m_agent: {fileID: 3679148482442296598}
@@ -203,7 +203,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 4302858828322245319, guid: 1e259d823e818ff4abafb9f0f8c333a9,
     type: 3}
   m_bulletForce: 5
-  m_firePointPadding: 3
+  m_firePointPadding: 2
 --- !u!1 &7933543771243361292
 GameObject:
   m_ObjectHideFlags: 0

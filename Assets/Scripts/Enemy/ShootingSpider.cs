@@ -20,7 +20,7 @@ public class ShootingSpider : Enemy, IDamageable
     protected override void Update()
     {
         base.Update();
-        if (!m_isShooting)
+        if (!m_isShooting & IsVisibleInCamera(Camera.main))
         {
             StartCoroutine(ShootBullet());
         }

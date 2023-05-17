@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -10,15 +11,27 @@ public class HealthBar : MonoBehaviour
     public Sprite fullHeart; // Full heart sprite
     public Sprite emptyHeart;
 
+    [SerializeField] private float m_regenerationTime;
+    private bool m_isRegenerating;
+
     void Awake()
     {
         if (Instance == null)
         {
             Instance = this;
+            m_isRegenerating = false;
         }
         else
         {
             Destroy(gameObject);
+        }
+    }
+
+    private void Update()
+    {
+        if (!m_isRegenerating & PlayerController.Instance.Health < PlayerController.Instance.MaxHealth)
+        {
+            StartCoroutine(RegenerateHealth());
         }
     }
 
@@ -40,6 +53,15 @@ public class HealthBar : MonoBehaviour
         }
 
         UpdateHealth(initialHealth);
+    }
+
+    private IEnumerator RegenerateHealth()
+    {
+        m_isRegenerating = true;
+        yield return new WaitForSeconds(m_regenerationTime);
+        UpdateHealth(PlayerController.Instance.Health + 1);
+        PlayerController.Instance.Health = PlayerController.Instance.Health + 1;
+        m_isRegenerating = false;
     }
 
     public void UpdateHealth(int currentHealth)

@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour, IDamageable
     public static PlayerController Instance { get; private set; }
 
     [SerializeField] private int m_health = 5;
+    [SerializeField] private int m_maxHealth = 5;
     [SerializeField] private float m_speed = 10f;
     [SerializeField] private float m_normalSpeed = 10f;
 
@@ -17,6 +18,12 @@ public class PlayerController : MonoBehaviour, IDamageable
     public int Health
     {
         get { return m_health; }
+        set { m_health = value; }
+    }
+
+    public int MaxHealth
+    {
+        get { return m_maxHealth; }
     }
     public float Speed
     {
@@ -95,7 +102,7 @@ public class PlayerController : MonoBehaviour, IDamageable
     {
         m_health -= damage;
         HealthBar.Instance.UpdateHealth(m_health);
-        if (m_health < 0)
+        if (m_health <= 0)
         {
             // Load End Scene
             Die();

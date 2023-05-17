@@ -8,6 +8,8 @@ public class GoodDoor : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        mgr.GoForward();
+        if (collision.gameObject.CompareTag("Player")){
+            mgr.GoForward();
+        }
     }
 }
