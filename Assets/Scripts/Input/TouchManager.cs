@@ -6,19 +6,12 @@ using UnityEngine.UI;
 
 public class TouchManager : MonoBehaviour
 {
-    public Transform debugCircle;
-    // variable to hold the tap location
     private Vector2 tapLocation;
     public Canvas cameraCanvas;
     public Vector2 TapLocation { get { return tapLocation; } }
-
-
     private bool isTapping;
-    public bool IsTapping {  get { return isTapping; } }
-
-    
+    public bool IsTapping { get { return isTapping; } }
     private int joystick_id = -1;
-
     public RectTransform joystickRect;
     private void Update()
     {
@@ -40,15 +33,13 @@ public class TouchManager : MonoBehaviour
                     // touch input begins
                     isTapping = true;
                     tapLocation = Camera.main.ScreenToWorldPoint(touch.position);
-                    debugCircle.position = tapLocation;
-                    
+
                 }
                 else if (touch.phase == TouchPhase.Moved)
                 {
                     if (touch.fingerId != joystick_id)
                     {
                         tapLocation = Camera.main.ScreenToWorldPoint(touch.position);
-                        debugCircle.position = tapLocation;
                     }
                 }
 
@@ -57,7 +48,7 @@ public class TouchManager : MonoBehaviour
                     if (touch.fingerId == joystick_id)
                     {
                         joystick_id = -1;
-                        
+
                     }
                     else
                     {
