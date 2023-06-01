@@ -4,7 +4,8 @@ using UnityEngine.UI;
 
 public class ScreenFader : MonoBehaviour
 {
-    [SerializeField] private float fadeDuration = 2.0f; // How long the fade should take
+    [SerializeField] private float fadeDuration = 2.0f;
+    [SerializeField] private float initialAlpha = 1f;
     private Image fadeImage;
 
     private void Awake()
@@ -14,16 +15,16 @@ public class ScreenFader : MonoBehaviour
 
     public void StartFade()
     {
-        fadeImage.color = new Color(fadeImage.color.r, fadeImage.color.g, fadeImage.color.b, 1f); // Set alpha to 1
+        fadeImage.color = new Color(fadeImage.color.r, fadeImage.color.g, fadeImage.color.b, initialAlpha);
         StartCoroutine(FadeImage());
     }
 
     private IEnumerator FadeImage()
     {
-        float fadeSpeed = 1f / fadeDuration;
+        float alphaFadeSpeed = 1f / fadeDuration;
         while (fadeImage.color.a > 0)
         {
-            Color newColor = new Color(fadeImage.color.r, fadeImage.color.g, fadeImage.color.b, fadeImage.color.a - (fadeSpeed * Time.deltaTime));
+            Color newColor = new Color(fadeImage.color.r, fadeImage.color.g, fadeImage.color.b, fadeImage.color.a - (alphaFadeSpeed * Time.deltaTime));
             fadeImage.color = newColor;
             yield return null;
         }
