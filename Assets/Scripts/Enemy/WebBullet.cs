@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Player;
 
 public class WebBullet : MonoBehaviour
 {
@@ -18,7 +19,7 @@ public class WebBullet : MonoBehaviour
             Enemy enemy = collision.gameObject.GetComponent<Enemy>();
             enemy.Speed = enemy.NormalSpeed * enemySpeedup;
         }
-        
+
     }
 
     private void OnTriggerExit2D(Collider2D collision)

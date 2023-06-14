@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using Player;
 public class Enemy : MonoBehaviour, IDamageable
 {
     [SerializeField] protected int m_health;
@@ -36,9 +37,9 @@ public class Enemy : MonoBehaviour, IDamageable
 
     protected virtual void Update()
     {
-        
+
         elapsedTime += Time.deltaTime;
-        
+
         if (elapsedTime >= m_updatePathInterval)
         {
             UpdatePath();
@@ -57,16 +58,6 @@ public class Enemy : MonoBehaviour, IDamageable
                 m_agent.SetDestination(targetPosition);
             }
         }
-    }
-
-    protected virtual void Move()
-    {
-        // Implement the enemy's movement logic here
-    }
-
-    protected virtual void Attack()
-    {
-        // Implement the enemy's attack logic here
     }
 
     public virtual void TakeDamage(int damage)
