@@ -35,35 +35,4 @@ For a comprehensive explanation of the game as a whole and the goals achieved, v
 ### Unity Engine
 This game was developed using Unity Game Engine 2021.3 version using a Student Professional license. Information on download details can be found [here](https://unity.com/)
 
-### Build Platform
-This game was developed for Android mobile devices
-### Environment Variables
-Upon creation of the local Docker container and Postgres database, the following environment variables must be configured in a .env file located in the root of the project. The following fields must be included to ensure a stable connection to the local database. 
-```
-POSTGRES_USER="postgres"
-POSTGRES_PASSWORD="postgres"
-POSTGRES_SERVER="localhost"
-POSTGRES_PORT="54322"
-POSTGRES_DB="postgres"
-```
 
-In addition to the Postgres connection variables, a Weather API Key must be obtained and set. Information on obtaining an API key can be found here(https://www.weatherapi.com/signup.aspx). Once the key is obtained, set the environment variable like below:
-```
-WEATHER_API_KEY="<your_api_key>"
-```
-
-### Alembic Migrations and Faker data population
-In order to handle database migrations as our schema evolved, we made use of the alembic library's built in autogeneration functionality. More information can be found here(https://alembic.sqlalchemy.org/en/latest/autogenerate.html)
-
-To update the local database to the most recent migration, run
-![image](https://github.com/crobin27/music-api/assets/76970281/547337db-2ad0-4732-8f0d-1dcece8778a7)
-
-We additionally created an autopopulation script that creates just over a million fake rows of data using the python 'faker' library. This step was crucial in testing the database with large sums of data. To populate with fake data, run
-![image](https://github.com/crobin27/music-api/assets/76970281/30b181b8-95b9-4975-bbdd-9d983fe37d7c)
-
-
-### Run the API
-Run following on your terminal:
-```
-vercel dev
-```
