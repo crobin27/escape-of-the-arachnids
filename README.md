@@ -2,6 +2,7 @@
 ![image](https://github.com/crobin27/escape-of-the-arachnids/assets/76970281/c282499d-563f-43fc-a72c-b6f4467fc271)
 ## Contributors
 Cole Robinson (colerobinson1112@gmail.com)
+
 Advised By: Dr. Hugh Smith, Cal Poly
 
 <details open="open">
