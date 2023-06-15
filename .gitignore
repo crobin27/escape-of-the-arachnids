@@ -43,6 +43,8 @@ ExportedObj/
 *.booproj
 *.svd
 *.pdb
+*.pdf
+!/documentation/*
 <<<<<<< HEAD
 =======
 >>>>>>> afc669ef842e233ac786535969c0ea45b9241eb6
