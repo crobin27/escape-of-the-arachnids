@@ -46,37 +46,37 @@ The game was developed and tested on the Android platform. At the time of comple
 ### Credits
 In order to accomplish the task of developing a game by myself, I was able to outsource some aspects of the game such as Art and the NavMesh2D to save time. Big thanks to all of the artists below!
 
-# Player Art 
+### Player Art 
 Alias: Ansimuz
 https://assetstore.unity.com/packages/2d/characters/tiny-rpg-forest-114685#description
 https://ansimuz.com/site/
 
-# Level 1 Artwork
+### Level 1 Artwork
 Alias: Szadi Art
 https://www.artstation.com/szadiart
 
-# Level 2 Artwork
+### Level 2 Artwork
 Krishna Palacio
 https://www.minifantasy.net/
 
-# Level 3 and 5 Artwork
+### Level 3 and 5 Artwork
 Zhivko Minchev
 https://zmgamedesign456577029.wordpress.com/
 
-# Level 4 Artwork
+### Level 4 Artwork
 Alias: Cainos
 https://cainos.itch.io/
 
-# Joystick Asset
+### Joystick Asset
 Fenerax Studios
 https://assetstore.unity.com/publishers/32730
 
-# Spider Art
+### Spider Art
 Graphic Artst: Stephen “Redshrike” Challenger
 Contributor: William. Thompsonj
 https://opengameart.org/content/lpc-spider
 
-# NavMesh2D
+### NavMesh2D
 Github: h8man
 https://github.com/h8man/NavMeshPlus
 
